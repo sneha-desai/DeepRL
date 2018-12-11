@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export GAILTF=/u/sdesai/gail-tf/
+export ENV_ID="Pendulum-v0"
+export BASELINES_PATH=$GAILTF/gailtf/baselines/trpo_mpi # use gailtf/baselines/trpo_mpi for TRPO
+export SAMPLE_STOCHASTIC="False"            # use True for stochastic sampling
+export STOCHASTIC_POLICY="False"            # use True for a stochastic policy
+export PYTHONPATH=$GAILTF:$PYTHONPATH       # as mentioned below
+cd $GAILTF
+
+echo ALL DONE!
